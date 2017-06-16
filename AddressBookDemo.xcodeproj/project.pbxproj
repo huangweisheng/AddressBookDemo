@@ -14,6 +14,9 @@
 		7A92FC941ACCE3760070C2E4 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7A92FC931ACCE3760070C2E4 /* Images.xcassets */; };
 		7A92FC971ACCE3760070C2E4 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7A92FC951ACCE3760070C2E4 /* LaunchScreen.xib */; };
 		7A92FCA31ACCE3770070C2E4 /* AddressBookDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92FCA21ACCE3770070C2E4 /* AddressBookDemoTests.m */; };
+		7A92FCD51ACCE7F10070C2E4 /* BookAddressViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92FCCF1ACCE7F10070C2E4 /* BookAddressViewController.m */; };
+		7A92FCD61ACCE7F10070C2E4 /* pinyin.c in Sources */ = {isa = PBXBuildFile; fileRef = 7A92FCD11ACCE7F10070C2E4 /* pinyin.c */; };
+		7A92FCD71ACCE7F10070C2E4 /* ChineseString.m in Sources */ = {isa = PBXBuildFile; fileRef = 7A92FCD41ACCE7F10070C2E4 /* ChineseString.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -40,6 +43,12 @@
 		7A92FC9C1ACCE3770070C2E4 /* AddressBookDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AddressBookDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7A92FCA11ACCE3770070C2E4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7A92FCA21ACCE3770070C2E4 /* AddressBookDemoTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AddressBookDemoTests.m; sourceTree = "<group>"; };
+		7A92FCCE1ACCE7F10070C2E4 /* BookAddressViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BookAddressViewController.h; sourceTree = "<group>"; };
+		7A92FCCF1ACCE7F10070C2E4 /* BookAddressViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BookAddressViewController.m; sourceTree = "<group>"; };
+		7A92FCD11ACCE7F10070C2E4 /* pinyin.c */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.c; path = pinyin.c; sourceTree = "<group>"; };
+		7A92FCD21ACCE7F10070C2E4 /* pinyin.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = pinyin.h; sourceTree = "<group>"; };
+		7A92FCD31ACCE7F10070C2E4 /* ChineseString.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChineseString.h; sourceTree = "<group>"; };
+		7A92FCD41ACCE7F10070C2E4 /* ChineseString.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChineseString.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +90,7 @@
 		7A92FC851ACCE3760070C2E4 /* AddressBookDemo */ = {
 			isa = PBXGroup;
 			children = (
+				7A92FCCD1ACCE7F10070C2E4 /* Class */,
 				7A92FC8A1ACCE3760070C2E4 /* AppDelegate.h */,
 				7A92FC8B1ACCE3760070C2E4 /* AppDelegate.m */,
 				7A92FC8D1ACCE3760070C2E4 /* ViewController.h */,
@@ -117,6 +127,27 @@
 				7A92FCA11ACCE3770070C2E4 /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		7A92FCCD1ACCE7F10070C2E4 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				7A92FCCE1ACCE7F10070C2E4 /* BookAddressViewController.h */,
+				7A92FCCF1ACCE7F10070C2E4 /* BookAddressViewController.m */,
+				7A92FCD01ACCE7F10070C2E4 /* ChineseSort */,
+				7A92FCD31ACCE7F10070C2E4 /* ChineseString.h */,
+				7A92FCD41ACCE7F10070C2E4 /* ChineseString.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		7A92FCD01ACCE7F10070C2E4 /* ChineseSort */ = {
+			isa = PBXGroup;
+			children = (
+				7A92FCD11ACCE7F10070C2E4 /* pinyin.c */,
+				7A92FCD21ACCE7F10070C2E4 /* pinyin.h */,
+			);
+			path = ChineseSort;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -171,6 +202,7 @@
 					};
 					7A92FC9B1ACCE3770070C2E4 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = V5XS96J4PW;
 						TestTargetID = 7A92FC821ACCE3760070C2E4;
 					};
 				};
@@ -219,8 +251,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7A92FCD61ACCE7F10070C2E4 /* pinyin.c in Sources */,
 				7A92FC8F1ACCE3760070C2E4 /* ViewController.m in Sources */,
+				7A92FCD71ACCE7F10070C2E4 /* ChineseString.m in Sources */,
 				7A92FC8C1ACCE3760070C2E4 /* AppDelegate.m in Sources */,
+				7A92FCD51ACCE7F10070C2E4 /* BookAddressViewController.m in Sources */,
 				7A92FC891ACCE3760070C2E4 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -280,7 +315,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
 				COPY_PHASE_STRIP = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				GCC_C_LANGUAGE_STANDARD = gnu99;
@@ -300,6 +336,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE = "d0dd7828-4ebf-4ef2-bbb7-541ac67114be";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -322,7 +359,8 @@
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
 				COPY_PHASE_STRIP = YES;
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
@@ -335,6 +373,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 8.1;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				PROVISIONING_PROFILE = "d0dd7828-4ebf-4ef2-bbb7-541ac67114be";
 				SDKROOT = iphoneos;
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
@@ -345,9 +384,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
 				INFOPLIST_FILE = AddressBookDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d0dd7828-4ebf-4ef2-bbb7-541ac67114be";
 			};
 			name = Debug;
 		};
@@ -355,9 +397,12 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
 				INFOPLIST_FILE = AddressBookDemo/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "d0dd7828-4ebf-4ef2-bbb7-541ac67114be";
 			};
 			name = Release;
 		};
@@ -365,6 +410,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -376,6 +423,7 @@
 				INFOPLIST_FILE = AddressBookDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressBookDemo.app/AddressBookDemo";
 			};
 			name = Debug;
@@ -384,6 +432,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -391,6 +441,7 @@
 				INFOPLIST_FILE = AddressBookDemoTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE = "";
 				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/AddressBookDemo.app/AddressBookDemo";
 			};
 			name = Release;
