@@ -199,6 +199,8 @@
 				TargetAttributes = {
 					7A92FC821ACCE3760070C2E4 = {
 						CreatedOnToolsVersion = 6.1.1;
+						DevelopmentTeam = 27TC6P5S7T;
+						ProvisioningStyle = Automatic;
 					};
 					7A92FC9B1ACCE3770070C2E4 = {
 						CreatedOnToolsVersion = 6.1.1;
@@ -384,12 +386,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: bo deng (7BSX6Q7UYW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 27TC6P5S7T;
 				INFOPLIST_FILE = AddressBookDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hws.colourlife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d0dd7828-4ebf-4ef2-bbb7-541ac67114be";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Debug;
 		};
@@ -397,12 +403,16 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CODE_SIGN_IDENTITY = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
-				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer: Tang Jing (WQN4TA3RKF)";
+				CODE_SIGN_IDENTITY = "iPhone Developer: bo deng (7BSX6Q7UYW)";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = 27TC6P5S7T;
 				INFOPLIST_FILE = AddressBookDemo/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.hws.colourlife;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				PROVISIONING_PROFILE = "d0dd7828-4ebf-4ef2-bbb7-541ac67114be";
+				PROVISIONING_PROFILE = "";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 			};
 			name = Release;
 		};
@@ -465,6 +475,7 @@
 				7A92FCA81ACCE3770070C2E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		7A92FCA91ACCE3770070C2E4 /* Build configuration list for PBXNativeTarget "AddressBookDemoTests" */ = {
 			isa = XCConfigurationList;
@@ -473,6 +484,7 @@
 				7A92FCAB1ACCE3770070C2E4 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
